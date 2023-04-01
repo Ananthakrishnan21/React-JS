@@ -13,6 +13,14 @@ let Title=()=>(
         <h1 className="head2">Component Composition</h1>
     </div>
 )
+let sampleJsx=<h1>Hello Guys</h1>
+let main=(
+    <>
+        <h1>How are you....!</h1>
+        {sampleJsx}
+    </>
+    
+)
 let HeadingComponent=()=>(
     <>
         <div id="container">
@@ -27,8 +35,11 @@ let HeadingComponent=()=>(
         <React.Fragment>
             <h2>Just for fun</h2>
         </React.Fragment>
+        <>
+            <h1>Good Boy...!</h1>
+        </>
     </>//Another way of writing React.Fragment
     
 )
 root.render(<HeadingComponent/>)
-rootSec.render(<Title/>)
+rootSec.render(main)
